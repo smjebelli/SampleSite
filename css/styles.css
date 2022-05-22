@@ -161,3 +161,54 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* Buttons */
+
+.btn {
+  font-size: 1.8rem;
+  padding: 2rem 3rem;
+  border-radius: 40px;
+  outline: none;
+  border-width: 0;
+  font-weight: 600;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: 0.3s;
+  margin: 1rem 0;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.btn--primary:hover,
+.btn--secondary:hover,
+.btn--accent:hover {
+  /* background-color: rgba(37, 132, 255, 0.8); */
+  filter: opacity(0.7);
+  color: black;
+  /* background-color: lighten(0.8); */
+}
+
+.btn--block {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}

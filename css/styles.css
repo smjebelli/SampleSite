@@ -212,3 +212,41 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Input */
+
+.input {
+  border-radius: 30px;
+  border: 1px solid gray;
+  color: var(--color-headings);
+  font-size: 2rem;
+  padding: 1.5rem 3.5rem;
+  outline: none;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+/* Input group*/
+.input-group {
+  width: auto;
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding-left: 2rem;
+}
+.input-group .btn {
+  margin: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}

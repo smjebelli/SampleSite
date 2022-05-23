@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-primary-dark: #2071da;
 }
 *,
 ::after,
@@ -89,9 +90,15 @@ a {
   font-size: 2rem;
   font-weight: 600;
   padding: 0.5rem 2rem;
+  width: auto;
+  display: inline-block;
 }
 .badge--primary {
   background-color: var(--color-primary);
+  color: white;
+}
+.badge--primary-dark {
+  background-color: var(--color-primary-dark);
   color: white;
 }
 
@@ -116,6 +123,7 @@ a {
   padding-left: 0;
   list-style: none;
   color: var(--color-headings);
+  text-transform: capitalize;
 }
 
 .list--inline .list__item {
@@ -249,4 +257,78 @@ a {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* Cards */
+
+.plans-container {
+  background-color: rgb(221, 221, 221);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem 1rem;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  column-gap: 2rem;
+}
+
+.plan {
+  max-width: 350px;
+  min-height: 400px;
+  max-height: 80%;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px 1px #727272;
+}
+.plan:hover {
+  box-shadow: 5px 5px 10px 5px #727272;
+}
+
+.plan--popular {
+  max-height: 100%;
+}
+
+.plan--popular .card__header {
+  background-color: var(--color-primary);
+}
+.plan--popular .card__header::before {
+  content: url(../images/popular.png);
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  right: 0px;
+}
+
+.card__header {
+  background-color: var(--color-secondary);
+  margin: 0;
+  padding: 2rem 3rem;
+  border-radius: 20px 20px 0 0px;
+  color: #fff;
+  position: relative;
+}
+
+.plan__name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.plan__price {
+  margin-top: 2rem;
+  font-size: 4rem;
+}
+.plan__billing-cycle {
+  color: #c5c5c6;
+}
+.plan__description {
+  color: #c5c5c6;
+  font-size: 1.8rem;
+}
+
+.plan__body {
+  padding-left: 1rem;
 }

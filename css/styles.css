@@ -425,6 +425,9 @@ a {
 .testimonial__image {
   margin-bottom: 3rem;
   position: relative;
+
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .testimonial__image > img {
   width: 100%;
@@ -436,6 +439,6 @@ a {
 
 .testimonial__image > .icon-container {
   position: absolute;
-  right: -32px;
+  right: 0px;
   top: 50px;
 }

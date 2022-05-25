@@ -17,30 +17,17 @@
     <title></title>
   </head>
   <body>
-    <div class="collapsible collapsible--expanded">
-      <div class="collapsible__header">
-        <h2 class="collapsible__title">item 1</h2>
-
-        <div class="collapsible__icon">
-          <span class="icon-container">
-            <svg
-              height="32"
-              id="chevron-right"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z" />
-            </svg>
-          </span>
-        </div>
-      </div>
-      <div class="collapsible__content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
-          perferendis.
-        </p>
-      </div>
+    <div class="nav collapsible collapsible--expanded">
+      <a href="/"><img src="/images/logo.png" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="nav__list collapsible__content">
+        <li class="list__item"><a class="item__anchor" href="#">Hosting</a></li>
+        <li class="list__item"><a class="item__anchor" href="#">VPS</a></li>
+        <li class="list__item"><a class="item__anchor" href="#">Domain</a></li>
+        <li class="list__item"><a class="item__anchor" href="#">Pricing</a></li>
+      </ul>
     </div>
     <script src="js/index.js"></script>
   </body>

@@ -162,6 +162,9 @@ a {
 .icon--accent {
   fill: var(--color-accent);
 }
+.icon--white {
+  fill: white;
+}
 
 .icon-container {
   display: flex;
@@ -516,4 +519,65 @@ a {
   margin-top: 2.5rem;
   transform: rotate(0deg);
   transition: all 0.3s;
+}
+
+/* List */
+
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  align-items: center;
+  margin: 0;
+}
+
+.nav__toggler {
+  margin: 2rem 2rem;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+}
+
+.list__item {
+  border-bottom: 1px solid #6c6c6c;
+}
+.item__anchor {
+  color: rgb(161, 161, 161);
+}
+.list__item a {
+  transition: color 0.2s;
+}
+.list__item a:hover {
+  color: white;
+}
+.collapsible--expanded .nav__toggler {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    width: auto;
+    display: flex;
+    justify-content: end;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .item__anchor {
+    font-size: 2rem;
+  }
+  .list__item {
+    margin-right: 1rem;
+    padding-right: 4rem;
+    border-bottom: none;
+  }
+  .nav__toggler {
+    max-width: 0;
+  }
 }

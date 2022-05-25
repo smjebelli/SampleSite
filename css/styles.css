@@ -488,3 +488,32 @@ a {
     grid-template-columns: 1fr auto;
   }
 }
+
+/* Collapsible */
+.collapsible {
+  margin: 1rem;
+}
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+.collapsible--expanded .collapsible__icon .icon-container {
+  transform: rotate(90deg);
+}
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.collapsible__icon .icon-container {
+  margin-top: 2.5rem;
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}

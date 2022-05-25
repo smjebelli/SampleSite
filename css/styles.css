@@ -448,6 +448,9 @@ a {
 .callout {
   padding: 3rem;
   background-color: var(--color-primary);
+  margin: 2rem 4rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px #727272;
 }
 
 .callout__heading {
@@ -467,11 +470,10 @@ a {
   .callout__btn {
     justify-self: start;
   }
-
-  .callout .grid--1x2 {
-    grid-template-columns: 1fr auto;
-  }
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
+  }
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
   }
 }

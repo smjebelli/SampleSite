@@ -6,6 +6,7 @@
   --color-body: #918ca4;
   --color-primary-dark: #2071da;
   --color--body--darker: #5c5577;
+  --color--accent-dark: #801b02;
 }
 *,
 ::after,
@@ -204,6 +205,10 @@ a {
 
 .btn--accent {
   background-color: var(--color-accent);
+  color: white;
+}
+.btn--accent-dark {
+  background-color: #801b02;
   color: white;
 }
 
@@ -447,10 +452,16 @@ a {
 
 .callout {
   padding: 3rem;
-  background-color: var(--color-primary);
   margin: 2rem 4rem;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 5px #727272;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+}
+.callout--accent {
+  background-color: var(--color-accent);
 }
 
 .callout__heading {
